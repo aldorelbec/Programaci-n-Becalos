@@ -54,6 +54,43 @@ console.log (nombre)
 console.log(typeof edad)
 console.log(typeof numerocadena)
 
+//////////////////////////////////////////
+//Ejercicios del proyecto
+var titulo= "Ejercicios del proyecto 1"
+console.log (titulo)
+// Imprimir el numero 42 (number)
+var numeroejercicio= 42
+console.log (typeof numeroejercicio)
+
+// Imprimir "Veinticinco" (String)
+var characterdeejercicio= "Veinticinco"
+console.log (typeof characterdeejercicio)
+
+//Imprimir "-666" (number)
+var numeronegativo = -666
+console.log (typeof numeronegativo)
+
+//imprimir "true" (boolean)
+var booleanejercicio = true
+console.log (typeof booleanejercicio)
+
+//imprimir "0" (number)
+var cero = 0
+console.log (typeof cero)
+
+//imprimir "nuul" 
+var vacioejercicio=null
+
+//imprimir undefined
+var variableindefinida
+console.log (typeof variableindefinida)
+
+//imprimir falso 
+var falsoejercicio= false
+console.log (typeof falsoejercicio)
+
+
+
 
 
 
