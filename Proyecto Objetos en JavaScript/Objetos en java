@@ -1,0 +1,47 @@
+
+
+class Libro {
+    constructor (titulo, autor, año, estado){//atributos
+        this.titulo = titulo
+        this.autor = autor
+        this.año = año
+        this.estado = estado
+        this.capitulos = ["capitilo 1", "capitulo 2", "capitulo 3"]
+    }
+    describirLibro (){
+        console.log ("El titulo del libro es: ", this.titulo," el autor es:", this.autor, ", se publicó en el año: ", this.año, "Actualmente este libro esta: ", this.estado );
+
+    }
+    
+}
+
+let libro1 = new Libro ("El amor en los tiempos del cólera", "Gabriel García Márquez", 1985, "Disponible" )
+console.log (libro1)
+libro1.describirLibro()
+
+
+
+
+
+/////////////////////////////////////////////////////////
+
+class Auto {//crear clase 
+    constructor (modelo,marca,año,color,cilindros) { //atributos
+        
+        this.modelo = modelo
+        this.marca = marca
+        this.año = año
+        this.color = color
+        this.cilindros = cilindros
+        
+       
+    }
+    //metodos
+    fichatecnica () {
+        console.log ("Ficha tecnica del auto:","\nModelo: ", this.modelo,"\nMarca: ", this.marca, "\nAño: ", this.año, "\nColor: ", this.color, "\nCilindraje; ", this.cilindros);
+    }
+}
+
+let auto = new Auto ("Onix", "chevrolet",2023,"plateado", 3 )
+console.log (auto)
+auto.fichatecnica()
