@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #90ee90;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(144, 238, 144, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #90ee90;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+textarea {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 1rem;
+  resize: vertical;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 5px #4caf50;
+}
+
+button[type="submit"] {
+  background-color: #90ee90;
+  color: #0f0f0f;
+  border: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #7be07b;
+}
+
+#commentsList {
+  margin-top: 2rem;
+}
+
+.comment {
+  background: #2a2a2a;
+  border-left: 4px solid #90ee90;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #e0ffe0;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.comment small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+}
+
+.comment button.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e53935;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.comment button.delete:hover {
+  background: #c62828;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
